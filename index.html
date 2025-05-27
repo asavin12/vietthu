@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Luyện viết thư B1 TELC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-container">
+        <h1>Luyện viết thư B1 TELC</h1>
+        <div id="stats">Số từ: 0 | Điểm: -/10</div>
+
+        <div class="sentence-section">
+            <select id="topic-select" class="vocabInput">
+                <option value="">Chọn một đề bài...</option>
+            </select>
+            <button id="toggle-topic-btn" class="toggle-topic-btn">Ẩn đề bài</button>
+            <input type="checkbox" id="show-font-btns" class="font-btn-checkbox">
+            <label for="show-font-btns" class="font-btn-label">Nút phóng to/thu nhỏ</label>
+            <button id="font-increase-btn" class="font-btn">+</button>
+            <button id="font-decrease-btn" class="font-btn">−</button>
+        </div>
+
+        <div class="split-container">
+            <div id="topic-container" class="topic-panel">
+                <div id="topic-text" class="sentence-text"></div>
+                <ul id="topic-points" class="topic-points"></ul>
+                <div id="topic-instructions" class="sentence-text"></div>
+            </div>
+
+            <div class="input-panel">
+                <label for="answer">Viết thư của bạn:</label>
+                <textarea id="answer" class="vocabInput" rows="10" placeholder="Viết thư tiếng Đức..."></textarea>
+                <div id="vocabHint"></div>
+            </div>
+        </div>
+
+        <div class="sentence-container">
+            <button id="checkBtn" class="check-button">Kiểm tra</button>
+        </div>
+
+        <div id="feedback"></div>
+        <div id="model-letter-container" class="model-letter-section"></div>
+    </div>
+
+    <div id="loading" class="loading-overlay hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="popup" class="popup-overlay hidden">
+        <div class="popup-content">
+            <span id="popupClose" class="close-btn">×</span>
+            <h2 id="popupTitle"></h2>
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
