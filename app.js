@@ -1228,7 +1228,7 @@ async function generateModelLetter(userLetter, topic) {
 
     const prompt = `
 Bạn là một giáo viên tiếng Đức giàu kinh nghiệm, chuyên chấm thi và hướng dẫn viết thư trình độ B1 TELC.
-Dựa trên đề bài, các gợi ý cho từng điểm, và bài viết của học sinh dưới đây, hãy viết một bức thư mẫu hoàn chỉnh, đạt điểm tuyệt đối (10/10) cho trình độ B1.
+Dựa trên đề bài, các gợi ý cho từng điểm, và bài viết của học sinh dưới đây, hãy viết một bức thư mẫu hoàn chỉnh, đạt điểm tuyệt đối (10/10) cho trình độ B1 dựa trên bài viết của học sinh.
 
 **Đề bài gốc (Người gửi: ${topic.sender})**:
 ${topic.content}
@@ -1242,106 +1242,65 @@ ${topic.instructions}
 **Bài viết của học sinh (để tham khảo và cải thiện)**:
 ${userLetter || "Học sinh chưa viết gì."}
 
-**Cấu trúc câu sẽ sử dụng trong bài viết**:
-    Dưới đây là các mẫu câu gợi ý cho từng loại point thường gặp trong 34 đề bài, dựa trên chức năng giao tiếp:
-    A. Phản ứng với thông tin/đề xuất từ thư đã nhận (Reaktion auf Informationen/Vorschläge)
-        Thể hiện sự vui mừng/đồng ý:
-        "Das ist eine tolle Idee/Überraschung!" (Ví dụ khi Petra đề xuất kỳ nghỉ ở Schwarzwald - Đề 1)
-        "Dein Vorschlag, ..., klingt super/sehr interessant." (Ví dụ: đề xuất của Nadja về việc chia sẻ khu vườn - Đề 4)
-        "Ich freue mich sehr für dich, dass du..." (Ví dụ: Eva có việc mới - Đề 2)
-        "Vielen Dank für die Einladung zu... Ich komme sehr gerne!" (Ví dụ: lời mời dự tiệc của Tobias - Đề 26)
-        "Das finde ich toll/nett von dir."
-        Thể hiện sự ngạc nhiên:
-        "Ich war wirklich überrascht zu lesen/hören, dass..."
-        Phản ứng với một vấn đề/tin xấu:
-        "Das mit deinem Bein tut mir leid! Gute Besserung!" (Ví dụ: Thomas bị gãy chân - Đề 13)
-        "Es ist schade, dass..."
-    B. Cung cấp thông tin về bản thân/chia sẻ tin tức (Über sich selbst informieren/Neuigkeiten mitteilen)
-        Chia sẻ tin tức chung:
-        "Bei mir gibt es auch einige Neuigkeiten: ..." (Thường là một trong các points)
-        "Du hast gefragt, wie es mir geht. Also, ..."
-        "Was mich betrifft, ..." / "Was mich angeht, ..."
-        "In letzter Zeit habe ich viel zu tun gehabt mit..."
-        Nói về tiến trình học tiếng Đức (Đề 2):
-        "Mit dem Deutschlernen klappt es ganz gut."
-        "Ich mache Fortschritte, aber manchmal finde ich die Grammatik noch schwierig."
-        "Zurzeit besuche ich einen B1-Kurs und lerne jeden Tag neue Vokabeln."
-        Nói về công việc/học tập (Đề 29):
-        "Ich arbeite als... bei..." / "Momentan suche ich eine Stelle als..."
-        "Mein Studium/Meine Arbeit macht mir viel Spaß, weil..."
-        Nói về căn hộ/nơi ở (Đề 12, 24, 25, 31):
-        "Meine Wohnung ist ziemlich groß/klein, aber gemütlich."
-        "Ich habe ... Zimmer und einen schönen Balkon."
-        "Ich wohne jetzt in..., und es gefällt mir hier sehr gut."
-    C. Đưa ra đề xuất/gợi ý (Vorschläge machen)
-        Đề xuất chung:
-        "Wir könnten vielleicht..."
-        "Wie wäre es, wenn wir...?" (Ví dụ: lên kế hoạch chung cho chuyến đi - Đề 1, 7)
-        "Ich schlage vor, dass wir..."
-        "Vielleicht wäre es besser, wenn..."
-        Đề xuất hoạt động chung (Đề 1, 3, 7, 11, 22, 33, 34):
-        "Wir könnten zusammen wandern gehen, kochen oder abends Spiele spielen."
-        "Ich hätte Lust, mit dir die Stadt zu besichtigen/ins Kino zu gehen."
-        Đề xuất giải pháp cho một vấn đề (Đề 3, 5, 6, 21, 24, 27):
-        "Um neue Leute kennenzulernen, könntest du vielleicht einem Sportverein beitreten oder einen Kurs besuchen." (Lời khuyên cho Sophie/Nora)
-        "Gegen den Lärm könntest du versuchen, freundlich mit deinem Nachbarn zu sprechen." (Lời khuyên cho Jakob)
-    D. Đặt câu hỏi (Fragen stellen)
-        Hỏi về thông tin cụ thể (thường là một point):
-        "Ich habe noch ein paar Fragen zum Garten: Wie groß ist er genau und wie hoch wäre die Miete?" (Ví dụ: hỏi Nadja về khu vườn - Đề 4)
-        "Könntest du mir bitte sagen, ob/wann/wie...?"
-        "Was müssen wir für den Ausflug mitbringen?" (Ví dụ: hỏi Thomas - Đề 13)
-        "Wie sind deine neuen Kollegen?" (Ví dụ: hỏi Vera - Đề 11)
-        Hỏi về ý kiến:
-        "Was denkst du darüber?"
-        "Welches Wochenende würde dir denn passen?" (Ví dụ: hỏi Sophie - Đề 3)
-    E. Bày tỏ ý kiến/cảm xúc/sở thích (Meinungen/Gefühle/Vorlieben äußern)
-        Nói về sở thích/điều yêu thích:
-        "Ich interessiere mich sehr für..."
-        "Am liebsten mache ich..." / "Mein Lieblingshobby ist..." (Ví dụ: nói về sở thích giải trí - Đề 3, 16)
-        "Meine Lieblingsstadt ist..., weil..." (Ví dụ: trả lời Jan/Moritz - Đề 15, 32)
-        "Ich höre gerne Rockmusik." (Ví dụ: trả lời Jan - Đề 15)
-        Bày tỏ quan điểm:
-        "Ich denke/finde, dass..."
-        "Meiner Meinung nach ist es besser, wenn..."
-        "Es ist verständlich, dass dein Bruder sich entspannen möchte, aber..." (Ví dụ: về anh trai của Nicole - Đề 5)
-    F. Kế hoạch và Dự định (Pläne und Absichten)
-        Nói về kế hoạch cá nhân:
-        "Ich habe vor, ..." / "Ich plane, ... zu + Infinitiv." (Ví dụ: kế hoạch cho kỳ nghỉ hè - Đề 18)
-        "Ich möchte gerne..."
-        Nói về việc có muốn tham gia/đến thăm hay không:
-        "Ja, ich möchte dich/euch sehr gerne besuchen." (Ví dụ: trả lời Andreas/Karla - Đề 12, 31)
-        "Dein Angebot, dich zu besuchen, nehme ich gerne an."
-        "Leider kann ich dieses Mal nicht kommen, weil..."
-        Nói về việc mang ai đó theo (Đề 1, 9, 14, 20, 26):
-        "Ich komme alleine."
-        "Ich würde gerne meine Familie/meinen Freund/meine Freundin mitbringen. Ist das in Ordnung?"
-        "Darf ich vielleicht jemanden mitbringen?"
-    G. Giải thích/Đưa ra lý do (Begründen)
-        Giải thích lý do không viết thư sớm hơn (Đề 5, 10, 12, 14, 18, 28, 29, 30):
-        "Entschuldige, dass ich so lange nicht geschrieben habe, aber ich hatte viel zu tun."
-        "In letzter Zeit war ich sehr mit ... beschäftigt."
-        Đưa ra lý do cho một lựa chọn/quyết định:
-        "... , weil ..." (Mệnh đề phụ, động từ cuối câu)
-        "Ich möchte lieber mit dem Zug fahren, denn das ist umweltfreundlicher und entspannter."
-        "Der Grund dafür ist, dass..."
-    H. Cách di chuyển/Phương tiện (Anreise/Verkehrsmittel)
-        Nói về cách bạn sẽ đến (Đề 1):
-        "Ich plane, mit dem Flugzeug/Zug zu kommen."
-        "Wahrscheinlich nehme ich das Auto."
-        Gợi ý cách bạn bè đến chỗ bạn (Đề 22):
-        "Ihr könntet am besten mit dem Zug bis ... fahren. Von dort nehme ich euch dann mit dem Auto ab."
-        "Die Anreise mit dem Flugzeug ist wahrscheinlich am schnellsten."
+**Chỉ sử dụng các "Cấu trúc câu" dưới đây trong bài viết mẫu**:
+		1. Câu hỏi gián tiếp
+			Ich weiß nicht, Fragenwort/ob...
+			Kannst du mir sagen, Fragenwort/ob...
+			Ich möchte gern wissen, Fragenwort/ob...
+			Ich frage mich, warum / wann / wie ...
+			Hast du Lust darauf?
+			
+		2. Diễn đạt mục đích
+			..., um ... zu + Infinitiv
+
+		3. Diễn đạt lý do
+			..., weil + Nebensatz
+			..., denn + Hauptsatz
+
+		4. Đề xuất
+			Wie wäre es, wenn ...
+			Was hältst du davon, wenn..
+			Wäre es möglich, ... zu + Infinitiv
+			Meiner Meinung nach könnten/sollten wir...
+			Ich schlage vor,dass ... könnten/sollten
+			Wir könnten/sollten....
+			Es wäre besser, wenn ....
+			
+		5. Câu mệnh lệnh lịch sự
+			Könnten Sie bitte ...
+			Würden Sie bitte ...
+			Sag mir bitte Bescheid,Fragenwort/ob...
+			
+		6. Mong muốn / ý định
+			Ich möchte ...
+			Ich würde gern ...
+			Ich hoffe, dass ...
+			Ich plane, ... zu + Infinitiv
+			
+		7. Hỏi lại
+			Wie findest du das?
+			Was meinst du?
+			Was denkst du?
+
+		8. Kết thư
+			Ich freue mich auf Ihre Antwort.
+
+			Bitte teilen Sie mir mit, ob ...
+
+			Vielen Dank im Voraus.
+
+			Mit freundlichen Grüßen
     Lưu ý quan trọng:
-    Thứ tự các points: topic.instructions thường yêu cầu bạn "überlegen Sie sich eine passende Reihenfolge der Punkte". Hãy sắp xếp các ý một cách logic.
-    Einleitung và Schluss: Đảm bảo mở bài và kết bài phù hợp với nội dung thư và các points bạn trả lời.
+    Thứ tự các Punkt hãy sắp xếp các ý một cách logic, tránh lặp cấu trúc một cách máy móc.
+    Einleitung và Schluss: Đảm bảo mở bài và kết bài phù hợp với nội dung thư và các punkt bạn trả lời.
     Số từ: Hầu hết các đề bài B1 yêu cầu khoảng 100-120 từ. Cố gắng trả lời đủ ý cho mỗi point mà không viết quá dài hoặc quá ngắn.
-    Tính linh hoạt: Đây là các cấu trúc gợi ý. Bạn cần điều chỉnh từ vựng và cấu trúc câu cho phù hợp với từng đề bài cụ thể và từng point.text. Các point.hint trong mỗi đề cũng là nguồn tham khảo rất tốt.
+    Tính linh hoạt: Đây là các cấu trúc gợi ý. Bạn cần điều chỉnh từ vựng và cấu trúc câu cho phù hợp với từng đề bài cụ thể và từng punkt.
 
 **Yêu cầu cho thư mẫu**:
 1. Viết bằng tiếng Đức.
 2. Viết dựa trên Bài viết của học sinh và các cấu trúc câu gợi ý.
 3. Đảm bảo thư trả lời ĐẦY ĐỦ và RÕ RÀNG TẤT CẢ các điểm (Leitpunkte) đã cho, sử dụng các gợi ý một cách hợp lý.
-4. Sử dụng từ vựng quen thuộc, đơn giản và ngữ pháp chính xác, phù hợp với trình độ B1. Tránh lặp từ.
+4. Sử dụng từ vựng quen thuộc, đơn giản và ngữ pháp chính xác, phù hợp với trình độ A2-B1. Tránh lặp từ và cấu trúc.
 5. Cấu trúc thư phải chuẩn: bao gồm Anrede (chào hỏi phù hợp), Einleitung (mở bài logic, kết nối với thư nhận được), Hauptteil (thân bài, phát triển các ý theo Leitpunkte một cách mạch lạc, có sự chuyển ý mượt mà giữa các điểm), Schluss (kết bài phù hợp), Grußformel (lời chào cuối thư) và Ort, Datum (ví dụ: Berlin, den TT.MM.JJJJ).
 6. Độ dài thư khoảng 100-120 từ.
 7. Giọng văn tự nhiên, phù hợp với tình huống giao tiếp trong đề bài.
