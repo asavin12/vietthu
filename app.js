@@ -1242,8 +1242,9 @@ ${topic.instructions}
 **Bài viết của học sinh (để tham khảo và cải thiện)**:
 ${userLetter || "Học sinh chưa viết gì."}
 
-**Chỉ sử dụng các "Cấu trúc câu" dưới đây trong bài viết mẫu**:
-		1. Câu hỏi gián tiếp
+**Chỉ sử dụng các "Cấu trúc câu" và "liên từ đơn đôi" dưới đây trong bài viết mẫu**:
+	A. Cấu trúc câu:	
+            1. Câu hỏi gián tiếp
 			Ich weiß nicht, Fragenwort/ob...
 			Kannst du mir sagen, Fragenwort/ob...
 			Ich möchte gern wissen, Fragenwort/ob...
@@ -1284,26 +1285,30 @@ ${userLetter || "Học sinh chưa viết gì."}
 
 		8. Kết thư
 			Ich freue mich auf Ihre Antwort.
-
 			Bitte teilen Sie mir mit, ob ...
-
 			Vielen Dank im Voraus.
-
 			Mit freundlichen Grüßen
+    B. Liên từ đơn và đôi:
+        1. Liên từ đơn
+            und, oder, aber, sondern, denn, weil, dass, ob, wenn, als, damit
+
+        2. Liên từ đôi
+            trotzdem, deshalb, deswegen, dann, danach, zuerst, zuletzt, außerdem, sonst
+
     Lưu ý quan trọng:
-    Thứ tự các Punkt hãy sắp xếp các ý một cách logic, tránh lặp cấu trúc một cách máy móc.
+    Thứ tự các Punkt hãy sắp xếp các ý một cách logic, phải là một bài thư liền mạch, tránh lặp cấu trúc một cách máy móc.
     Einleitung và Schluss: Đảm bảo mở bài và kết bài phù hợp với nội dung thư và các punkt bạn trả lời.
-    Số từ: Hầu hết các đề bài B1 yêu cầu khoảng 100-120 từ. Cố gắng trả lời đủ ý cho mỗi point mà không viết quá dài hoặc quá ngắn.
-    Tính linh hoạt: Đây là các cấu trúc gợi ý. Bạn cần điều chỉnh từ vựng và cấu trúc câu cho phù hợp với từng đề bài cụ thể và từng punkt.
+    Cố gắng trả lời đủ ý cho mỗi punkt mà không viết quá dài hoặc quá ngắn.
+    Tính linh hoạt: Đây là các cấu trúc và liên từ gợi ý. Bạn cần điều chỉnh từ vựng và cấu trúc câu cho phù hợp với từng đề bài cụ thể và từng punkt.
 
 **Yêu cầu cho thư mẫu**:
 1. Viết bằng tiếng Đức.
-2. Viết dựa trên Bài viết của học sinh và các cấu trúc câu gợi ý.
+2. Xây dựng Bài thư mẫu dựa trên Bài viết của học sinh và các yêu cầu đã đưa ra.
 3. Đảm bảo thư trả lời ĐẦY ĐỦ và RÕ RÀNG TẤT CẢ các điểm (Leitpunkte) đã cho, sử dụng các gợi ý một cách hợp lý.
-4. Sử dụng từ vựng quen thuộc, đơn giản và ngữ pháp chính xác, phù hợp với trình độ A2-B1. Tránh lặp từ và cấu trúc.
+4. Sử dụng từ vựng quen thuộc, đơn giản và ngữ pháp chính xác, phù hợp với trình độ A2-B1. Tránh lặp từ, cấu trúc và các loại liên từ.
 5. Cấu trúc thư phải chuẩn: bao gồm Anrede (chào hỏi phù hợp), Einleitung (mở bài logic, kết nối với thư nhận được), Hauptteil (thân bài, phát triển các ý theo Leitpunkte một cách mạch lạc, có sự chuyển ý mượt mà giữa các điểm), Schluss (kết bài phù hợp), Grußformel (lời chào cuối thư) và Ort, Datum (ví dụ: Berlin, den TT.MM.JJJJ).
 6. Độ dài thư khoảng 100-120 từ.
-7. Giọng văn tự nhiên, phù hợp với tình huống giao tiếp trong đề bài.
+7. Hành văn tự nhiên đời thường, phù hợp với tình huống giao tiếp trong đề bài.
 8. Chỉ trả về nội dung bức thư mẫu hoàn chỉnh bằng tiếng Đức, không kèm theo bất kỳ giải thích, bình luận, tiêu đề, hay dấu markdown (như \`\`\`) nào khác. Chỉ là nội dung thư. Ví dụ:
 [Ort], den [Datum]
 Liebe/r [Name],
