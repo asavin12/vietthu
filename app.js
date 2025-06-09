@@ -1242,70 +1242,107 @@ ${topic.instructions}
 **Bài viết của học sinh (để tham khảo và cải thiện)**:
 ${userLetter || "Học sinh chưa viết gì."}
 
-**Chỉ sử dụng các "Cấu trúc câu" và "liên từ đơn đôi" dưới đây trong bài viết mẫu**:
-	A. Cấu trúc câu:	
-            1. Câu hỏi gián tiếp
-			Ich weiß nicht, Fragenwort/ob...
-			Kannst du mir sagen, Fragenwort/ob...
-			Ich möchte gern wissen, Fragenwort/ob...
-			Ich frage mich, warum / wann / wie ...
-			Hast du Lust darauf?
-			
-		2. Diễn đạt mục đích
-			..., um ... zu + Infinitiv
+**Sử dụng các "Cấu trúc câu" và "liên từ đơn đôi" dưới đây trong bài viết mẫu**:
+    Cấu trúc câu chi tiết cho từng phần
+    Bạn hãy coi đây là những "mảnh ghép" có thể lắp ráp lại để tạo thành một bức thư hoàn chỉnh.
 
-		3. Diễn đạt lý do
-			..., weil + Nebensatz
-			..., denn + Hauptsatz
+        1. Địa điểm, ngày tháng (Ort, Datum)
+        Luôn viết ở góc trên cùng bên phải.
 
-		4. Đề xuất
-			Wie wäre es, wenn ...
-			Was hältst du davon, wenn..
-			Wäre es möglich, ... zu + Infinitiv
-			Meiner Meinung nach könnten/sollten wir...
-			Ich schlage vor,dass ... könnten/sollten
-			Wir könnten/sollten....
-			Es wäre besser, wenn ....
-			
-		5. Câu mệnh lệnh lịch sự
-			Könnten Sie bitte ...
-			Würden Sie bitte ...
-			Sag mir bitte Bescheid,Fragenwort/ob...
-			
-		6. Mong muốn / ý định
-			Ich möchte ...
-			Ich würde gern ...
-			Ich hoffe, dass ...
-			Ich plane, ... zu + Infinitiv
-			
-		7. Hỏi lại
-			Wie findest du das?
-			Was meinst du?
-			Was denkst du?
+        Hanoi, den 08.06.2025
+        München, den 21. Juni 2025
+        2. Lời chào (Anrede)
+        Vì đây là thư cho bạn bè, hãy dùng cách thân mật.
 
-		8. Kết thư
-			Ich freue mich auf Ihre Antwort.
-			Bitte teilen Sie mir mit, ob ...
-			Vielen Dank im Voraus.
-			Mit freundlichen Grüßen
-    B. Liên từ đơn và đôi:
-        1. Liên từ đơn
-            und, oder, aber, sondern, denn, weil, dass, ob, wenn, als, damit
+        Với tên nữ: Liebe [Tên], (Ví dụ: Liebe Petra,)
+        Với tên nam: Lieber [Tên], (Ví dụ: Lieber Andreas,)
+        Với cả hai người: Liebe [Tên nữ], lieber [Tên nam], (Ví dụ: Liebe Cora, lieber Alex,)
+        QUAN TRỌNG: Sau lời chào luôn có dấu phẩy (,), và chữ cái đầu tiên của câu tiếp theo sẽ viết thường.
+        3. Câu mở đầu (Einleitung)
+        Luôn bắt đầu bằng việc cảm ơn và phản hồi ngắn gọn về lá thư bạn nhận được.
 
-        2. Liên từ đôi
-            trotzdem, deshalb, deswegen, dann, danach, zuerst, zuletzt, außerdem, sonst
+        Để cảm ơn:
+        vielen Dank für deinen netten/lieben/tollen Brief!
+        ich habe mich sehr über deinen Brief gefreut.
+        Để xin lỗi vì trả lời muộn (nếu cần):
+        Entschuldige, dass ich dir erst jetzt schreibe, aber ich hatte in letzter Zeit viel zu tun.
+        Es tut mir leid, dass ich so lange nicht geantwortet habe.
+        Kết hợp:
+        vielen Dank für deinen netten Brief! Ich habe mich sehr gefreut, wieder von dir zu hören.
+        4. Nội dung chính (Hauptteil) - Trả lời 4 Leitpunkte
+        Đây là phần quan trọng nhất. Hãy sử dụng các cấu trúc câu sau cho từng loại yêu cầu.
 
-    Lưu ý quan trọng:
-    Thứ tự các Punkt hãy sắp xếp các ý một cách logic, phải là một bài thư liền mạch, tránh lặp cấu trúc một cách máy móc.
-    Einleitung và Schluss: Đảm bảo mở bài và kết bài phù hợp với nội dung thư và các punkt bạn trả lời.
-    Cố gắng trả lời đủ ý cho mỗi punkt mà không viết quá dài hoặc quá ngắn.
-    Tính linh hoạt: Đây là các cấu trúc và liên từ gợi ý. Bạn cần điều chỉnh từ vựng và cấu trúc câu cho phù hợp với từng đề bài cụ thể và từng punkt.
+        a) Phản hồi về một đề nghị, lời mời hoặc tin tức (Reaktion auf Vorschlag/Einladung/Neuigkeit)
+
+        Tích cực:
+        Dein Vorschlag, ... zu ..., finde ich super/toll/großartig! (Đề nghị của bạn về việc... tôi thấy thật tuyệt vời!)
+        Deine Idee ist wirklich fantastisch! (Ý tưởng của bạn thật sự rất tuyệt!)
+        Ich freue mich riesig über deine Einladung. (Tôi cực kỳ vui về lời mời của bạn.)
+        Herzlichen Glückwunsch zu deiner neuen Stelle/Wohnung! (Chúc mừng cậu với công việc/căn hộ mới!)
+        Đồng ý/Chấp nhận:
+        Gerne nehme ich deine Einladung an. (Tôi rất sẵn lòng nhận lời mời của bạn.)
+        Ja, ich komme sehr gerne. (Vâng, tôi rất sẵn lòng đến.)
+        Das ist eine tolle Idee! Da bin ich auf jeden Fall dabei. (Đó là một ý tưởng tuyệt vời! Tôi chắc chắn sẽ tham gia.)
+        b) Đưa ra lời khuyên (Tipps geben)
+
+        An deiner Stelle würde ich ... (Nếu ở vị trí của bạn, tôi sẽ...)
+        Du könntest vielleicht ... (Có lẽ bạn có thể...)
+        Wie wäre es, wenn du ...? (Sẽ thế nào nếu bạn...?)
+        Ein guter Tipp wäre, ... zu ... (Một mẹo hay sẽ là...)
+        Ich habe eine Idee: ... (Tôi có một ý tưởng: ...)
+        c) Đặt câu hỏi (Fragen stellen)
+
+        Ich habe noch ein paar Fragen: (Tôi vẫn còn một vài câu hỏi:)
+        Könntest du mir bitte sagen, ob/wann/wie ...? (Bạn có thể nói cho tôi biết, liệu/khi nào/làm thế nào...?)
+        Was meinst du zu ...? (Bạn nghĩ sao về...?)
+        Eine Frage noch: ...? (Còn một câu hỏi nữa: ...?)
+        d) Đưa ra đề xuất (Vorschläge machen)
+
+        Ich schlage vor, dass wir ... (Tôi đề nghị rằng chúng ta...)
+        Wir könnten doch ... (Chúng ta có thể...)
+        Was hältst du davon, wenn wir ...? (Bạn nghĩ sao nếu chúng ta...?)
+        Vielleicht können wir uns am ... treffen? (Có lẽ chúng ta có thể gặp nhau vào...?)
+        e) Nói về bản thân (tin tức, kế hoạch, cảm nghĩ)
+
+        Bei mir gibt es auch etwas Neues: ... (Tôi cũng có vài điều mới:)
+        Du weißt ja, dass ich ... (Bạn biết mà, rằng tôi...)
+        Was mich betrifft, ... (Về phần tôi thì, ...)
+        In meiner Freizeit mache ich am liebsten ... (Trong thời gian rảnh, tôi thích làm nhất là...)
+        Mein Traumberuf ist ... (Nghề nghiệp mơ ước của tôi là...)
+        f) Từ nối để bức thư mạch lạc
+
+        Außerdem (Ngoài ra), Deshalb (Vì vậy), Allerdings (Tuy nhiên), Was ... betrifft, (Về vấn đề...), Übrigens (Nhân tiện).
+        5. Câu kết thúc (Schlusssatz)
+        Trước khi chào tạm biệt, hãy dùng một trong các câu sau.
+
+        Ich freue mich schon auf deine Antwort. (Tôi rất mong chờ câu trả lời của bạn.)
+        Schreib mir bald wieder. (Hãy sớm viết thư lại cho tôi nhé.)
+        Ich hoffe, bald von dir zu hören. (Tôi hy vọng sẽ sớm nghe tin từ bạn.)
+        Lass uns bald telefonieren. (Chúng ta hãy sớm gọi điện cho nhau nhé.)
+        6. Lời chào cuối thư (Grußformel)
+        Không có dấu phẩy sau lời chào này.
+
+        Viele Grüße
+        Liebe Grüße
+        Herzliche Grüße
+        7. Ký tên (Unterschrift)
+        Chỉ cần ghi tên của bạn.
+
+        Dein [Tên nam]
+        Deine [Tên nữ]
+        [trực tiếp đưa Tên của bạn]
+
+    **Lưu ý quan trọng**:
+        - Thứ tự các Punkt hãy sắp xếp các ý một cách logic, phải là một bài thư liền mạch, tránh lặp cấu trúc một cách máy móc trong một bài thư.
+        - Einleitung và Schluss: Đảm bảo mở bài và kết bài phù hợp với nội dung thư và các punkt bạn trả lời.
+        - Cố gắng trả lời đủ ý cho mỗi punkt mà không viết quá dài hoặc quá ngắn.(khoảng 2-3 câu)
+        - Tính linh hoạt: Đây là các cấu trúc và liên từ gợi ý. Bạn cần điều chỉnh từ vựng và cấu trúc câu cho phù hợp với từng đề bài cụ thể và từng punkt.
 
 **Yêu cầu cho thư mẫu**:
 1. Viết bằng tiếng Đức.
 2. Xây dựng Bài thư mẫu dựa trên Bài viết của học sinh và các yêu cầu đã đưa ra.
 3. Đảm bảo thư trả lời ĐẦY ĐỦ và RÕ RÀNG TẤT CẢ các điểm (Leitpunkte) đã cho, sử dụng các gợi ý một cách hợp lý.
-4. Sử dụng từ vựng quen thuộc, đơn giản và ngữ pháp chính xác, phù hợp với trình độ A2-B1. Tránh lặp từ, cấu trúc và các loại liên từ.
+4. Sử dụng từ vựng quen thuộc, đơn giản, dễ hiểu và ngữ pháp chính xác, phù hợp với trình độ A2-B1. Tránh lặp từ, cấu trúc và các loại liên từ.
 5. Cấu trúc thư phải chuẩn: bao gồm Anrede (chào hỏi phù hợp), Einleitung (mở bài logic, kết nối với thư nhận được), Hauptteil (thân bài, phát triển các ý theo Leitpunkte một cách mạch lạc, có sự chuyển ý mượt mà giữa các điểm), Schluss (kết bài phù hợp), Grußformel (lời chào cuối thư) và Ort, Datum (ví dụ: Berlin, den TT.MM.JJJJ).
 6. Độ dài thư khoảng 100-120 từ.
 7. Hành văn tự nhiên đời thường, phù hợp với tình huống giao tiếp trong đề bài.
