@@ -968,6 +968,34 @@ Emilia`,
             }
         ],
         instructions: "Bevor Sie den Brief schreiben, überlegen Sie sich eine passende Reihenfolge der Punkte, eine passende Einleitung und einen passenden Schluss. Vergessen Sie nicht Datum und Anrede."
+    },
+    {
+        id: 35,
+        sender: "Laura",
+        content: `Liebe (r).....
+du weißt ja, dass ich schon lange nach einem Job suche, der mit meinem Hobby Musik zu tun hat. Stell dir vor, nun habe ich den perfekten Job gefunden. Ich gehe für sechs Monate mit der berühmten deutschen Musikgruppe „Wohnraumhelden“ auf Tournee durch verschiedene Länder – als Assistentin des Managers. Dabei komme ich mit der Gruppe auch ganz in die Nähe deiner Stadt. Leider war ich ja noch nie da. Kannst du mir ein paar Tipps geben, was ich dort so machen kann?\nIm Moment sind wir noch mit der Planung beschäftigt. Deshalb weiß ich noch nicht genau, wann es losgeht. Wenn ich den genauen Termin kenne, melde ich mich sofort bei dir. Ich hoffe, dass wir uns dann einmal treffen können, und natürlich organisiere ich auch Freikarten für dich und deine Freunde.
+Ich freue mich schon!
+Liebe Grüße
+Laura`,
+        points: [
+            {
+                text: "Ihre Lieblingsmusik",
+                hint: "Beispiele: Ich höre am liebsten Pop- und Rockmusik. / Die Gruppe ‚Wohnraumhelden‘ kenne ich sogar ein bisschen. / Deine Nachricht ist super, weil Musik auch mein Hobby ist."
+            },
+            {
+                text: "Wichtige Tipps",
+                hint: "Beispiele: Du solltest unbedingt die Altstadt besichtigen. / Ein wichtiger Tipp ist auch, in einem der kleinen Cafés am Fluss zu sitzen. / Wenn du Zeit hast, kannst du auch den [Name eines Parks] besuchen."
+            },
+            {
+                text: "Reaktion auf Freikarten",
+                hint: "Beispiele: Vielen Dank für das Angebot mit den Freikarten! Darüber freue ich mich riesig. / Das ist ja eine fantastische Überraschung. / Gerne nehme ich die Einladung zum Konzert an."
+            },
+            {
+                text: "Treffen?",
+                hint: "Beispiele: Ja, wir sollten uns auf jeden Fall treffen! / Dein Vorschlag für ein Treffen ist super. / Gib mir einfach Bescheid, wenn du den genauen Termin kennst, dann können wir etwas planen."
+            }
+        ],
+        instructions: "Bevor Sie den Brief schreiben, überlegen Sie sich eine passende Reihenfolge der Punkte, eine passende Einleitung und einen passenden Schluss. Vergessen Sie nicht Datum und Anrede."
     }
 ];
 
