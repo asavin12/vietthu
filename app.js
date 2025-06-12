@@ -1351,13 +1351,7 @@ ${userLetter || "Học sinh chưa viết gì."}
         Không có dấu phẩy sau lời chào này.
 
         Viele Grüße
-        Liebe Grüße
-        Herzliche Grüße
         7. Ký tên (Unterschrift)
-        Chỉ cần ghi tên của bạn.
-
-        Dein [Tên nam]
-        Deine [Tên nữ]
         [trực tiếp đưa Tên của bạn]
 
     **Lưu ý quan trọng**:
@@ -1367,14 +1361,13 @@ ${userLetter || "Học sinh chưa viết gì."}
         - Tính linh hoạt: Đây là các cấu trúc và liên từ gợi ý. Bạn cần điều chỉnh từ vựng và cấu trúc câu cho phù hợp với từng đề bài cụ thể và từng punkt.
 
 **Yêu cầu cho thư mẫu**:
-1. Viết bằng tiếng Đức.
-2. Xây dựng Bài thư mẫu dựa trên Bài viết của học sinh và các yêu cầu đã đưa ra.
+1. Viết bằng tiếng Đức với nội dung thân bài có dộ dài tối đa khoảng 100-120 từ.
+2. Xây dựng và tối ưu Bài thư mẫu dựa trên Bài viết của học sinh và các yêu cầu đã đưa ra.
 3. Đảm bảo thư trả lời ĐẦY ĐỦ và RÕ RÀNG TẤT CẢ các điểm (Leitpunkte) đã cho, sử dụng các gợi ý một cách hợp lý.
 4. Sử dụng từ vựng quen thuộc, đơn giản, dễ hiểu và ngữ pháp chính xác, phù hợp với trình độ A2-B1. Tránh lặp từ, cấu trúc và các loại liên từ.
 5. Cấu trúc thư phải chuẩn: bao gồm Anrede (chào hỏi phù hợp), Einleitung (mở bài logic, kết nối với thư nhận được), Hauptteil (thân bài, phát triển các ý theo Leitpunkte một cách mạch lạc, có sự chuyển ý mượt mà giữa các điểm), Schluss (kết bài phù hợp), Grußformel (lời chào cuối thư) và Ort, Datum (ví dụ: Berlin, den TT.MM.JJJJ).
-6. Độ dài thư khoảng 100-120 từ.
-7. Hành văn tự nhiên đời thường, phù hợp với tình huống giao tiếp trong đề bài.
-8. Chỉ trả về nội dung bức thư mẫu hoàn chỉnh bằng tiếng Đức, không kèm theo bất kỳ giải thích, bình luận, tiêu đề, hay dấu markdown (như \`\`\`) nào khác. Chỉ là nội dung thư. Ví dụ:
+6. Hành văn tự nhiên đời thường, phù hợp với tình huống giao tiếp trong đề bài.
+7. Chỉ trả về nội dung bức thư mẫu hoàn chỉnh bằng tiếng Đức, không kèm theo bất kỳ giải thích, bình luận, tiêu đề, hay dấu markdown (như \`\`\`) nào khác. Chỉ là nội dung thư. Ví dụ:
 [Ort], den [Datum]
 Liebe/r [Name],
 vielen Dank für deinen Brief! Ich habe mich sehr darüber gefreut.
